@@ -1,9 +1,16 @@
-require: rubocop-rspec
+require:
+  - rubocop-rspec
+  - rubocop-performance
 
 AllCops:
   TargetRubyVersion: 2.7.2
   NewCops: enable
   SuggestExtensions: false
+
+Metrics/BlockLength:
+  IgnoredMethods: ['describe', 'context']
+  Exclude:
+    - 'spec/*/*spec.rb'
 
 Layout/LineLength:
   Max: 100
@@ -13,3 +20,9 @@ Style/Documentation:
 
 Style/StringLiterals:
   Enabled: true
+
+Lint/Debugger:
+  Enabled: false
+
+RSpec/MessageSpies:
+  EnforcedStyle: receive

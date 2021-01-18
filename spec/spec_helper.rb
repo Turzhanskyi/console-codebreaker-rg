@@ -9,6 +9,7 @@ SimpleCov.start do
 end
 
 require_relative '../config/autoloader'
+require_relative 'support/create_game'
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|

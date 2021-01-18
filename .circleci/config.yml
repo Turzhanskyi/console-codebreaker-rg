@@ -37,10 +37,13 @@ commands:
           command: |
             bundle exec rspec --format progress \
                               --format RspecJunitFormatter \
-                              --out /tmp/test-results/rspec/rspec.xml
+                              --out /tmp/test-results/rspec.xml
           when: always
       - store_test_results:
-          path: /tmp/test-results/rspec/
+          path: /tmp/test-results
+      - store_artifacts:
+          path: /tmp/test-results
+          destination: test-results
 jobs:
   lintering:
     executor: default

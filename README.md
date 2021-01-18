@@ -12,7 +12,7 @@ The code-generator, which will be played by the application we’re going to wri
 ```
 
 ```ruby
- ruby index.rb
+ ruby codebreaker_console_call.rb
 ```
 
 ## Usage

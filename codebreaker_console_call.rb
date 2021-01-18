@@ -3,5 +3,5 @@
 require_relative 'config/autoloader'
 
 module CodebreakerConsole
-  CodebreakerConsole::Console.new.run
+  CodebreakerConsole::Console.new.call
 end
