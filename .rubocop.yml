@@ -1,0 +1,15 @@
+require: rubocop-rspec
+
+AllCops:
+  TargetRubyVersion: 2.7.2
+  NewCops: enable
+  SuggestExtensions: false
+
+Layout/LineLength:
+  Max: 100
+
+Style/Documentation:
+  Enabled: false
+
+Style/StringLiterals:
+  Enabled: true
