@@ -1,0 +1,6 @@
+# Ignore IDE and OS specific files
+.idea
+.vs
+.history
+.rakeTasks
+.generators
