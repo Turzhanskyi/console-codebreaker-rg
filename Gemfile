@@ -2,7 +2,8 @@
 
 source 'https://rubygems.org'
 
-gem 'codebreaker', git: 'git@github.com:Turzhanskyi/codebreaker-rg.git', branch: 'develop'
+gem 'codebreaker',
+    git: 'https://github.com/Turzhanskyi/codebreaker-rg.git', branch: 'develop'
 gem 'faker', '~> 2.15', '>= 2.15.1'
 gem 'fasterer', '~> 0.8.3', require: false
 gem 'i18n', '~> 1.8', '>= 1.8.7'

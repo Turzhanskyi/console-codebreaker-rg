@@ -1,5 +1,5 @@
 GIT
-  remote: git@github.com:Turzhanskyi/codebreaker-rg.git
+  remote: https://github.com/Turzhanskyi/codebreaker-rg.git
   revision: 1ce2fe70aa029ff329db2f0bfdb6b8023b7eca15
   branch: develop
   specs:
