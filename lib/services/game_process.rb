@@ -2,8 +2,6 @@
 
 module CodebreakerConsole
   module GameProcess
-    MAIN_MENU_COMMANDS = { start: :start, rules: :rules, stats: :stats, exit: :exit }.freeze
-
     def game_process
       loop do
         return lost unless game.attempts_available?
@@ -25,7 +23,7 @@ module CodebreakerConsole
     end
 
     def process_answer_menu(answer)
-      send(MAIN_MENU_COMMANDS[answer.to_sym])
+      send(answer)
       main_menu if answer != I18n.t(:'play.start_command')
     end
 
@@ -42,8 +40,7 @@ module CodebreakerConsole
     end
 
     def describe_difficulty_levels
-      Codebreaker::Constants::LEVELS.each_key do |name|
-        difficulty = Codebreaker::Constants::LEVELS[name]
+      Codebreaker::Constants::LEVELS.each do |_, difficulty|
         args = { name: difficulty[:name], attempts: difficulty[:attempts],
                  hints: difficulty[:hints] }
         puts I18n.t(:'registration.difficulty_description', **args)

@@ -7,6 +7,7 @@ module CodebreakerConsole
     include GameProcess
 
     STORAGE_FILE = 'statistics.yml'
+    MAIN_MENU_COMMANDS = %w[start rules stats exit].freeze
 
     attr_reader :game, :storage
 
@@ -24,7 +25,7 @@ module CodebreakerConsole
     def main_menu
       message(:main_menu)
       answer = user_enter
-      return process_answer_menu(answer) if MAIN_MENU_COMMANDS.key?(answer.to_sym)
+      return process_answer_menu(answer) if MAIN_MENU_COMMANDS.include?(answer)
 
       message(:'errors.message.unexpected_command')
       main_menu

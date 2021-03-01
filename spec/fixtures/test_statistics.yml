@@ -44,7 +44,7 @@
 - !ruby/object:Codebreaker::Game
   user: !ruby/object:Codebreaker::User
     name: user_test
-    created_at: !ruby/object:DateTime 2021-02-09 15:39:56.643254289 +02:00
+    created_at: !ruby/object:DateTime 2021-03-01 23:34:12.055606084 +02:00
     errors: []
   difficulty:
     :name: :easy
@@ -52,7 +52,7 @@
     :hints: 2
   secret_code: '6543'
   hints:
+  - '3'
   - '5'
-  - '6'
   hints_used: 0
   attempts_used: 0
