@@ -4,3 +4,7 @@
 .history
 .rakeTasks
 .generators
+
+coverage/
+statistics.yml
+.env

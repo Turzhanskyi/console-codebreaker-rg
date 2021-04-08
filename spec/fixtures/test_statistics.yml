@@ -1,0 +1,58 @@
+---
+:winners:
+- !ruby/object:Codebreaker::Game
+  user: !ruby/object:Codebreaker::User
+    name: vitalii
+    created_at: !ruby/object:DateTime 2021-01-21 20:56:22.259147447 +02:00
+  difficulty:
+    :name: :hell
+    :attempts: 5
+    :hints: 1
+  secret_code: 3166
+  hints:
+  - '6'
+  hints_used: 0
+  attempts_used: 1
+- !ruby/object:Codebreaker::Game
+  user: !ruby/object:Codebreaker::User
+    name: ivan
+    created_at: !ruby/object:DateTime 2021-01-21 21:24:03.301234000 +03:00
+  difficulty:
+    :name: :easy
+    :attempts: 15
+    :hints: 2
+  secret_code: 6552
+  hints:
+  - '5'
+  hints_used: 1
+  attempts_used: 2
+- !ruby/object:Codebreaker::Game
+  user: !ruby/object:Codebreaker::User
+    name: user_test
+    created_at: !ruby/object:DateTime 2021-01-26 22:38:02.943694591 +02:00
+    errors: []
+  difficulty:
+    :name: :easy
+    :attempts: 15
+    :hints: 2
+  secret_code: '6543'
+  hints:
+  - '6'
+  - '5'
+  hints_used: 0
+  attempts_used: 0
+- !ruby/object:Codebreaker::Game
+  user: !ruby/object:Codebreaker::User
+    name: user_test
+    created_at: !ruby/object:DateTime 2021-03-01 23:34:12.055606084 +02:00
+    errors: []
+  difficulty:
+    :name: :easy
+    :attempts: 15
+    :hints: 2
+  secret_code: '6543'
+  hints:
+  - '3'
+  - '5'
+  hints_used: 0
+  attempts_used: 0
